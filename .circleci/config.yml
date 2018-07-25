@@ -19,6 +19,8 @@ jobs:
           key: v1-npmcache-{{ checksum "wp-e2e-tests/.nvmrc" }}-{{ checksum "wp-e2e-tests/package-lock.json" }}
           paths:
             - "~/.npm"
+      - run: sudo chmod +x wp-e2e-tests/node_modules/.bin/mocha
+      - run: sudo chmod +x wp-e2e-tests/specs-jetpack/runner.sh
       - run: cd wp-e2e-tests && npm run decryptconfig && ./specs-jetpack/runner.sh
       - store_test_results:
           path: wp-e2e-tests/reports/
