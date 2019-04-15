@@ -1,6 +1,5 @@
 # Background
 
-A wrapper repo to run Jetpack Smoke tests running against Jetpack Beta on several third party hosts in parallel.
-# Current Build Status
+## NOTE: This repo has been merged in to [wp-calypso](https://github.com/Automattic/wp-calypso) and the tests can be found in the `/test/e2e` directory.
 
-[![CircleCI](https://circleci.com/gh/Automattic/wp-e2e-tests-jetpack-smoke/tree/master.svg?style=svg)](https://circleci.com/gh/Automattic/wp-e2e-tests-jetpack-smoke/tree/master)
+A wrapper repo to run Jetpack Smoke tests running against Jetpack Beta on several third party hosts in parallel.
